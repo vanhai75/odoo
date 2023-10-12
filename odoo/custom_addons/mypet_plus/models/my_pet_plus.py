@@ -10,7 +10,7 @@ class MyPetPlus(models.Model):
 
     # add new field
     toy = fields.Char('Pet Toy', required=False)
-
+#sửa 
     # modify old fields
     age = fields.Integer('Pet Age', default=2)  # change default age from 1 to 2
     gender = fields.Selection(selection_add=[('sterilization', 'Sterilization')])
