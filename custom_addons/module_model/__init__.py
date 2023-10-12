@@ -1,2 +1,2 @@
-from . import school
-from . import student
+from . import models
+from . import wizards

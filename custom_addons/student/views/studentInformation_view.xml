@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <odoo>
+        <data>
+             <menuitem id="student_information_menu"
+            name="Hoc sinh"
+            parent="school.school_menu_root"
+           action="action_student_information"
+            sequence="3" />
+
+        <record id="student_information_list_view" model="ir.ui.view">
+            <field name="name">Student Information list</field>
+            <field name="model">student.information</field>
+            <field name="arch" type="xml">
+                <tree  string="Danh Hoc Sinh">
+                    <field name="class_id" optional="show"/>
+                    <field name="name" optional="show"/>
+                    <field name="birthday" optional="show"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="student_information_form_view" model="ir.ui.view">
+            <field name="name">Student Information form</field>
+            <field name="model">student.information</field>
+            <field name="arch" type="xml">
+                <form >
+                    <sheet>
+                        <group>
+                            <field name="class_id" />
+                            <field name="name" />
+                            <field name="birthday"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_student_information" model="ir.actions.act_window">
+        <field name="name">Student Information</field>
+        <field name="res_model">student.information</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create a new class for more!
+            </p>
+        </field>
+         </record>
+        </data>
+    </odoo>

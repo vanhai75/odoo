@@ -1,5 +1,5 @@
 {
-    'name': "Module-2",
+    'name': "Module_2",
     'summary': """player model""",
     'description': """Managing pet information""",
     'author': '',
@@ -12,12 +12,16 @@
     'data': [
         'security/player_security.xml',
         'security/ir.model.access.csv',
-        'views/player_view.xml'
+        'views/player_view.xml',
+        'demo/demo.xml',
+        'data/account_data.xml',
+
+
 
     ],
     'qweb': [
         # 'static/src/xml/templates.xml',
-        # '/static/src/xml/btn_tree_multi_update.xml',
+        'static/src/xml/btn_tree_multi_update.xml',
     ],
     'installable': True,
     'auto_install': False,

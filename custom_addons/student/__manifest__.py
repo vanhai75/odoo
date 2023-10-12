@@ -2,15 +2,16 @@
     'name': 'Student management',
     'version': '1.0',
     'category': '',
-    'sequence':3,
+    'sequence':4,
     'summary': 'Phan mem quan ly',
     'description': '',
     'author': 'Vanhai',
     'website': '',
-    'depends': ['base', 'school'],
+    'depends': ["class"],
     'data': [
-        'views/class_infor.xml',
+        'views/studentInformation_view.xml',
         'security/ir.model.access.csv',
+        'views/class_view.xml'
 
     ],
     'installable': True,

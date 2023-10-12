@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Định nghĩa dữ liệu demo cho model "Player" -->
+        <record model="player" id="demo_player_1">
+            <field name="name">John Doe</field>
+            <field name="country">USA</field>
+            <field name="gender">male</field>
+            <field name="day_of_birth">1990-05-15 00:00:00</field>
+            <field name="position">Forward</field>
+            <field name="height">180.0</field>
+            <field name="weight">75.0</field>
+            <field name="salary">5000.0</field>
+            <field name="tax">10.0</field>
+        </record>
+
+        <record model="player" id="demo_player_2">
+            <field name="name">Alice Smith</field>
+            <field name="country">Canada</field>
+            <field name="gender">female</field>
+            <field name="day_of_birth">1995-08-20 00:00:00</field>
+            <field name="position">Midfielder</field>
+            <field name="height">165.0</field>
+            <field name="weight">60.0</field>
+            <field name="salary">6000.0</field>
+            <field name="tax">15.0</field>
+        </record>
+    </data>
+</odoo>

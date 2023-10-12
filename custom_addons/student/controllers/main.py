@@ -6,17 +6,17 @@ from odoo.http import request
 
 class MountainController(http.Controller):
 
-    @http.route('/mountain', auth='public', type='http')
-    def mountain_check(self):
-        return "Mountain check check check"
+    # @http.route('/mountain', auth='public', type='http')
+    # def mountain_check(self):
+    #     return "Mountain check check check"
 
     # @http.route('/mountain/<int:id>', auth='public', type='http')
     # def mountain_check(self, id):
     #     return "Mountain check check check %s" % str(id)
 
-    # @http.route('/mountain', auth='public')
-    # def mountain_check(self):
-    #     return werkzeug.utils.redirect('https://www.google.com')
+    @http.route('/mountain', auth='public')
+    def mountain_check(self):
+        return werkzeug.utils.redirect('https://www.google.com')
 
     # @http.route('/mountain', auth='public')
     # def mountain_check(self):

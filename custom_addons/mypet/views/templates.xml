@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <templates id="template" xml:space="preserve">
+        <xpath expr="." position="inside">
+<!--            <script type="text/javascript" src="/mypet/static/src/js/bold.js"></script> &lt;!&ndash; code cũ nè &ndash;&gt;-->
+            <script type="text/javascript" src="/mypet/static/src/js/btn_tree_multi_update.js"></script> <!-- khai báo hiện thực action cho button mới vừa làm @ javascript -->
+        </xpath>
+    </templates>
+</odoo>

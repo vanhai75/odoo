@@ -1,14 +1,17 @@
 {
-    'name': 'class manegerment',
+    'name': 'Class management',
     'version': '1.0',
     'category': '',
-    'sequence': 16,
+    'sequence':3,
     'summary': 'Phan mem quan ly',
     'description': '',
     'author': 'Vanhai',
     'website': '',
-    'depends': ['base'],
+    'depends': ['school'],
     'data': [
+        'views/class_infor.xml',
+        'security/ir.model.access.csv',
+        'views/school_view.xml',
 
     ],
     'installable': True,
